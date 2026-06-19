@@ -2,7 +2,6 @@ import utils.mathHelpers as mth
 import hashlib
 import os
 
-m = "hello"
 
 def keygen (p,q,e):
     n = p* q
