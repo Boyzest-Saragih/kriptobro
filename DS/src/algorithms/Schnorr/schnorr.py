@@ -51,9 +51,18 @@ def clear ():
 
 
 while True:
-    p = 1109
-    q = 277
-    g = 13
+    p = 2038635241
+    q = 999331
+    g = 2
+
+    h = 2
+
+    g = pow(h, (p-1)//q, p)
+
+    print(mth.isPrima(p))
+    print(mth.isPrima(q))
+    print(mth.isPrima(g))
+    print(mth.modularExponentiation(g,q,p)==1)
 
     try:
         x = int(input(f"masukkan nilai x (bilangan acak yang lebih kecil dari {q}-1) : "))
