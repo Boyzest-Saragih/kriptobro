@@ -54,12 +54,18 @@ while True:
 
     q = 999331
     p = 2038635241
-    x = 123456
-    g = 968811435
+    g = 642978365
+    x = 12345
     k = 54321
 
-    # g = pow(2,2040, p)
-    # print(g)
+    while True:
+        h = random.randint(2, p - 2)
+        g = pow(h, (p - 1) // q, p)
+        if g != 1:
+            break
+
+    
+    print(g)
 
     m = input("Masukkan nilai pesan (m) : ")
     print()
@@ -67,9 +73,9 @@ while True:
     print("PROSES PEMBENTUKAN KUNCI")
     print("="*30)
     y = keygen(g, p, x)
-    print(f"Parameter p = {p}")
-    print(f"Parameter q = {q}")
-    print(f"Parameter g = {g}")
+    print(f"p={p}")
+    print(f"q={q}")
+    print(f"g={g}")
     print(f"Private Key (x) = {x}")
     print(f"Public Key  (y) = {y}")
     print()
