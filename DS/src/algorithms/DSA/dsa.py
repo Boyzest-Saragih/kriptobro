@@ -60,7 +60,6 @@ while True:
 
     # g = pow(2,2040, p)
     # print(g)
-    # print(random.randint(10, q))
 
     m = input("Masukkan nilai pesan (m) : ")
     print()
