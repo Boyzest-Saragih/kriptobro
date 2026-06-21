@@ -56,7 +56,7 @@ while True:
     while True:
         if mth.gcd(e, phiN) != 1:
             print(f"{e} tidak relatif prima terhadap φ(n) = {phiN}")
-            e = int(input("masukkan nilai e(relatif prima) : "))
+            e = int(input("masukkan nilai e(relatif prima) (ex : 65537) : "))
         else:
             break 
     print()
